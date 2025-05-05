@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITRAKINIAINA - Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/testimonial.css">
     <link rel="icon" href="./img/favico.png" type="image/png">
     <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
     <style>
     </style>
 </head>
@@ -15,12 +26,11 @@
     <nav>
         <div class="logo">SITRAKINIAINA</div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">Experiences</a>
-            <a href="#">Contact</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact me</a>
         </div>
-        <button class="cta-button">Download CV</button>
+        <button class="cta-button"><span class="download">Download</span> CV</button>
     </nav>
     
     <!-- Hero Section -->
@@ -33,14 +43,14 @@
         <h2>My name is <span style="color:#4CCA3B;">Sitrakiniaina</span> ,</h2>
         <p>Welcome to my space — where creativity meets code and adventures come to life, just like in Minecraft!
         </p>
-        <button class="hero-button">Download CV</button>
+        <button class="hero-button" href="#contact">Contact Me</button>
     </section>
     
 
     <!-- About Section -->
     <section class="about" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.6) 0%, rgba(10, 10, 10, 0.1) 70%);">
         <div class="about-content">
-            <h3 class="section-subtitle">About</h3>
+            <h3 class="section-subtitle">What I do</h3>
             <h2 class="section-title"></h2>
             <p class="about-text">I specialize in web development using HTML, CSS, JavaScript, Vue, PHP, and PostgreSQL.
                 I'm a highly motivated and eternally optimistic developer, committed to writing clean, efficient, and reliable code. I believe in continuous learning and constant self-improvement.
@@ -55,7 +65,7 @@
     </section>
     
     <!-- Features Section -->
-    <section class="features" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.4) 0%, rgba(10, 10, 10, 0.1) 70%);">
+    <section id="experiences" class="features" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.4) 0%, rgba(10, 10, 10, 0.1) 70%);">
         <div class="features-top">
             <div class="features-image">
                 <img src="./img/house.png" alt="Minecraft Scene">
@@ -90,90 +100,207 @@
     </section>
     
     <!-- Key Features Section -->
-    <section class="key-features" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.3) 0%, rgba(10, 10, 10, 0.1) 70%);">
-        <div class="key-features-title">
-            <h2 class="section-title">My <span class="feature-subtitle">skills</span></h2>
-            <p class="feature-description">Best In Tincidunt Arcu Et. Facilisis A Arcu, Risus Sapien And Duis Ipsum Risus Imperdiet.</p>
+    <section id="skills" class="skills-orbit-section">
+        <div class="skills-title">
+          <h2 class="section-title">My <span class="feature-subtitle">skills & tools</span></h2>
+          <p class="feature-description">A showcase of my technical expertise and professional tools</p>
         </div>
         
-        <div class="feature-cards">
-            <div class="feature-card">
-                <div class="feature-icon">A</div>
-                <h3>Build Anything</h3>
-                <p>Let Your Imagination Run Wild With Unlimited Blocks To Create Anything You Can Dream Up.</p>
+        <div class="orbit-container">
+          <div class="orbit-center">
+            <div class="profile-icon">Skill & tools</div>
+          </div>
+          
+          <!-- Inner orbit with logos -->
+          <div class="orbit orbit-inner">
+            <div class="orbit-path">
+              <div class="orbit-item" data-label="HTML5">
+                <img src="./img/html.png" alt="HTML5" class="tech-logo" />
+                <span class="logo-label">HTML5</span>
+              </div>
+              <div class="orbit-item" data-label="CSS3">
+                <img src="./img/css.png" alt="CSS3" class="tech-logo" />
+                <span class="logo-label">CSS3</span>
+              </div>
+              <div class="orbit-item" data-label="JavaScript">
+                <img src="./img/js.png" alt="JavaScript" class="tech-logo" />
+                <span class="logo-label">JavaScript</span>
+              </div>
             </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">S</div>
-                <h3>Survive and Thrive</h3>
-                <p>Test Your Skills In Survival Mode As You Gather Resources, Craft Tools And Battle Monsters.</p>
+          </div>
+          
+          <!-- Middle orbit with logos -->
+          <div class="orbit orbit-middle">
+            <div class="orbit-path">
+              <div class="orbit-item" data-label="PHP">
+                <img src="./img/php.png" alt="PHP" class="tech-logo" />
+                <span class="logo-label">PHP</span>
+              </div>
+              <div class="orbit-item" data-label="MySQL">
+                <img src="./img/mysql.png" alt="MySQL" class="tech-logo" />
+                <span class="logo-label">MySQL</span>
+              </div>
+              <div class="orbit-item" data-label="PostgreSQL">
+                <img src="./img/pg.png" alt="PostgreSQL" class="tech-logo" />
+                <span class="logo-label">PostgreSQL</span>
+              </div>
             </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">P</div>
-                <h3>Play with Friends</h3>
-                <p>Connect With Friends Online In Cooperative Play, Build Together, Or Compete In Mini-games.</p>
+          </div>
+          
+          <!-- Outer orbit with logos -->
+          <div class="orbit orbit-outer">
+            <div class="orbit-path">
+              <div class="orbit-item" data-label="GitHub">
+                <img src="./img/github.png" alt="GitHub" class="tech-logo" />
+                <span class="logo-label">GitHub</span>
+              </div>
+              <div class="orbit-item" data-label="Figma">
+                <img src="./img/figma.png" alt="Figma" class="tech-logo" />
+                <span class="logo-label">Figma</span>
+              </div>
+              <div class="orbit-item" data-label="React">
+                <img src="./img/wp.png" alt="React" class="tech-logo" />
+                <span class="logo-label">Wordpress</span>
+              </div>
+              <div class="orbit-item" data-label="Node.js">
+                <img src="./img/vue.png" alt="Node.js" class="tech-logo" />
+                <span class="logo-label">Vue.js</span>
+              </div>
             </div>
+          </div>
         </div>
         
-        <button class="hero-button">Learn More About Our Features</button>
-    </section>
+        <button class="hero-button">Explore My Projects</button>
+      
+        
+      </section>
     
     <!-- Testimonials Section -->
-    <section class="testimonials" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.5) 0%, rgba(10, 10, 10, 0.1) 70%);">
-        <h2 class="section-title">Player <span class="feature-subtitle">Testimonials</span></h2>
-        <p class="feature-description">Best In In Tincidunt Arcu Et Facilisis A, Arcu. Risus Sapien And Duis Ipsum Risus Imperdiet.</p>
-        
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <p class="testimonial-content">Pulvinar Pellentesque Nec Lorem Amet, Pretium Eget Commodo Risus. Mauris Nec Commodo Eu Sed Felis Quam Suscipit Maurisn Ante Vel Sit Mauris Pulvinar Viverra Et Auctor Tempus Pharetra.</p>
-                <div class="testimonial-user">
-                    <div class="user-avatar">
-                        <img src="/api/placeholder/50/50" alt="User">
-                    </div>
-                    <div class="user-info">
-                        <h4>Martin Jones</h4>
-                        <p>Gamer</p>
-                    </div>
-                </div>
-                <div class="quote">"</div>
+    <section id="contact" class="contact-section" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.5) 0%, rgba(10, 10, 10, 0.1) 70%);">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Get in <span class="feature-subtitle">Touch</span></h2>
+                <p class="contact-description">Have a project in mind or want to collaborate? Send me a message and I'll get back to you as soon as possible.</p>
             </div>
             
-            <div class="testimonial-card">
-                <p class="testimonial-content">Dui Dolor, Pellentesque Eget. Lorem Amet, Pretium Quis Nisi Eu Duis Nulla Et Fusce A, Arcu. Lorem Quis Fermentum Mauris Nec Commodo Eu Sed Felis Quam Eget Sit Mauris Pulvinar Aliquam Ut Gravida Tristique Platea.</p>
-                <div class="testimonial-user">
-                    <div class="user-avatar">
-                        <img src="/api/placeholder/50/50" alt="User">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>sitrakiniainaeddyfrancisco@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="user-info">
-                        <h4>Martin Jones</h4>
-                        <p>Pro-Gamer</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Madagascar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+261 34 46 481 31</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="quote">"</div>
-            </div>
-            
-            <div class="testimonial-card">
-                <p class="testimonial-content">Pulvinar Pellentesque Nec Lorem Amet, Pretium Eget Commodo Risus. Mauris Nec Commodo Eu Sed Felis Quam Suscipit Maurisn Ante Vel Sit Mauris Pulvinar Aliquam Ut Gravida Tristique Platea.</p>
-                <div class="testimonial-user">
-                    <div class="user-avatar">
-                        <img src="/api/placeholder/50/50" alt="User">
-                    </div>
-                    <div class="user-info">
-                        <h4>Jane Smith</h4>
-                        <p>2000-3500</p>
-                    </div>
+                
+                <div class="contact-form">
+                    <form id="emailForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="quote">"</div>
             </div>
         </div>
         
-        <div class="dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+        <style>
+        </style>
+        
+        <script>
+            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // In a real implementation, you would send the form data to your server
+                // or an email service like FormSpree, EmailJS, etc.
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Example: Show success message (in a real site, you'd show this after successful submission)
+                alert(`Thank you ${name}! Your message has been sent. We'll get back to you soon.`);
+                
+                // Reset the form
+                this.reset();
+            });
+        </script>
     </section>
     
     <!-- Footer -->

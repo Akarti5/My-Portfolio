@@ -1,0 +1,55 @@
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(255, 255, 255, 0.01); /* transparent blanc */
+    backdrop-filter: blur(5px); /* flou en arrière-plan */
+    -webkit-backdrop-filter: blur(5px); /* support Safari */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'MINECRAFT PE', sans-serif;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8c52ff;
+}
+
+.cta-button {
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7440e0;
+    transform: translateY(-2px);
+}

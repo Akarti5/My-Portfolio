@@ -1,0 +1,72 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #0a0a0a;
+}
+
+body {
+    background: radial-gradient(circle at center, #21004b 0%, #0a0a0a 70%);
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Custom Minecraft font */
+@font-face {
+    font-family: 'MINECRAFT PE';
+    src: url('../minecraft_pe/MINECRAFT PE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Common section styles */
+.section-subtitle {
+    color: #8c52ff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.feature-subtitle {
+    color: #8c52ff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.feature-description {
+    color: #b8b8b8;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Common animation */
+.floating {
+ 
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}

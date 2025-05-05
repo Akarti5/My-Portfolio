@@ -1,0 +1,59 @@
+
+        /* About section */
+        .about {
+            padding: 80px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-content {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: auto;
+            height: 250px;
+            max-width: 400px;
+        }
+        
+        .section-subtitle {
+            color: #8c52ff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .about-text {
+            color: #b8b8b8;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .learn-more {
+            display: inline-block;
+            background-color: #8c52ff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .learn-more:hover {
+            background-color: #7440e0;
+            transform: translateY(-2px);
+        }

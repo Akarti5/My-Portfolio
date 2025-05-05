@@ -1,0 +1,65 @@
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .feature-cards {
+        flex-direction: column;
+    }
+    
+    .testimonial-cards {
+        flex-direction: column;
+    }
+    
+    .testimonial-card {
+        width: 100%;
+    }
+    
+    .creeper {
+        width: auto;
+        top: 50vh;
+        height: 75px;
+        display: none;
+    }
+    
+    .fox {
+        top: 30px;
+        height: 100px;
+        width: 100px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .about, .features-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image, .features-image {
+        order: -1;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 467px) {
+    .download {
+        display: none;
+    }
+}

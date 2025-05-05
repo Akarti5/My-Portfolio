@@ -1,0 +1,327 @@
+.skills-orbit-section {
+    padding: 5rem 1rem;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(33, 0, 75, 0.3) 0%, rgba(10, 10, 10, 0.1) 70%);
+    overflow: hidden;
+    position: relative;
+    min-height: 700px;
+  }
+  
+  .skills-title {
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .feature-subtitle {
+    color: #8a2be2;
+  }
+  
+  .feature-description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #cccccc;
+  }
+  
+  .orbit-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto 3rem;
+  }
+  
+  .orbit-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #5e2ca5, #8a2be2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+  }
+  
+  .profile-icon {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .orbit-path {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px dashed rgba(138, 43, 226, 0.3);
+  }
+  
+  .orbit-inner {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .orbit-inner .orbit-path {
+    animation: rotate 20s linear infinite;
+  }
+  
+  .orbit-middle {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .orbit-middle .orbit-path {
+    animation: rotate 30s linear infinite reverse;
+  }
+  
+  .orbit-outer {
+    width: 440px;
+    height: 440px;
+  }
+  
+  .orbit-outer .orbit-path {
+    animation: rotate 40s linear infinite;
+  }
+  
+  .orbit-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(15, 15, 15, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  
+  .orbit-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.8);
+    z-index: 100;
+  }
+  
+  .tech-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .logo-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(10, 10, 10, 0.7);
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    z-index: 100;
+  }
+  
+  .orbit-item:hover .logo-label {
+    opacity: 1;
+  }
+  
+  /* Position orbit items */
+  /* Inner orbit */
+  .orbit-inner .orbit-item:nth-child(1) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  .orbit-inner .orbit-item:nth-child(1):hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .orbit-inner .orbit-item:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .orbit-inner .orbit-item:nth-child(2):hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .orbit-inner .orbit-item:nth-child(3) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  .orbit-inner .orbit-item:nth-child(3):hover {
+    transform: translate(50%, -50%) scale(1.2);
+  }
+  
+  /* Middle orbit */
+  .orbit-middle .orbit-item:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  .orbit-middle .orbit-item:nth-child(1):hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .orbit-middle .orbit-item:nth-child(2) {
+    bottom: 20%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+  }
+  .orbit-middle .orbit-item:nth-child(2):hover {
+    transform: translate(-50%, 50%) scale(1.2);
+  }
+  
+  .orbit-middle .orbit-item:nth-child(3) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  .orbit-middle .orbit-item:nth-child(3):hover {
+    transform: translate(50%, -50%) scale(1.2);
+  }
+  
+  /* Outer orbit */
+  .orbit-outer .orbit-item:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .orbit-outer .orbit-item:nth-child(1):hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .orbit-outer .orbit-item:nth-child(2) {
+    top: 30%;
+    right: 10%;
+    transform: translate(50%, -50%);
+  }
+  .orbit-outer .orbit-item:nth-child(2):hover {
+    transform: translate(50%, -50%) scale(1.2);
+  }
+  
+  .orbit-outer .orbit-item:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .orbit-outer .orbit-item:nth-child(3):hover {
+    transform: translate(-50%, 50%) scale(1.2);
+  }
+  
+  .orbit-outer .orbit-item:nth-child(4) {
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  .orbit-outer .orbit-item:nth-child(4):hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hero-button {
+    background: linear-gradient(45deg, #5e2ca5, #8a2be2);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+  }
+  
+  .hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .orbit-inner {
+      width: 160px;
+      height: 160px;
+    }
+    
+    .orbit-middle {
+      width: 260px;
+      height: 260px;
+    }
+    
+    .orbit-outer {
+      width: 360px;
+      height: 360px;
+    }
+    
+    .orbit-item {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .tech-logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .orbit-container {
+      height: 400px;
+    }
+    
+    .orbit-inner {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .orbit-middle {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .orbit-outer {
+      width: 280px;
+      height: 280px;
+    }
+    
+    .orbit-item {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .tech-logo {
+      width: 25px;
+      height: 25px;
+    }
+  }
