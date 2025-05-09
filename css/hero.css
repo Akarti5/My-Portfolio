@@ -8,7 +8,7 @@
     padding: 50px 8%;
     position: relative;
     overflow: hidden;
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .hero h1 {
@@ -63,7 +63,7 @@
 .creeper {
     position: absolute;
     width: auto;
-    height: 240px;
-    bottom: 29%;
-    right: 33%;
+    height: 350px;
+    bottom: 27%;
+    right: 15%;
 }
