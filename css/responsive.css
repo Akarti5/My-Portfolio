@@ -34,6 +34,8 @@
     .about, .features-top {
         flex-direction: column;
         text-align: center;
+        position: relative;
+        top: -200px;
     }
     
     .about-image, .features-image {

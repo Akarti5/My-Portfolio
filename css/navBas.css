@@ -4,7 +4,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+        
         }
 
         body {
@@ -116,7 +116,7 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            nav {
+            .nav-links {
                 display: none; /* Hide desktop nav on mobile */
             }
             

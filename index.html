@@ -19,6 +19,8 @@
     <link rel="icon" href="./img/favico.png" type="image/png">
     <script src="./js/script.js"></script>
     <script src="./js/navBas.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     
     <style>
         /* Enable smooth scrolling for the entire page */
@@ -34,7 +36,7 @@
         <div class="nav-links">
             <a href="#experiences">Experiences</a>
             <a href="#skills">Skills</a>
-            <a href="#contact">Contact me</a>
+            <a href="#contact">Contact</a>
         </div>
         <button class="cta-button"><span class="download">Download</span> CV</button>
     </nav>
@@ -57,10 +59,6 @@
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
-            <a href="#" class="mobile-nav-item" id="download-cv">
-                <i class="fas fa-download"></i>
-                <span>CV</span>
-            </a>
         </div>
     </div>
     <!-- Hero Section -->
@@ -70,7 +68,7 @@
 
         
         <h1>HELLO WORLD !</h1>
-        <h2>My name is <span style="color:#4CCA3B;">Sitrakiniaina</span> ,</h2>
+        <h2>My name is <span style="color:#4CCA3B;">Sitrakiniaina , a web developer</span>.</h2>
         <p>I build modern, user-friendly websites and web apps that bring ideas to life. From clean code to creative design.This is where creativity meets code and adventures come to life.
         </p>
         <a href="#contact"><button class="hero-button">Contact Me</button></a>
@@ -181,7 +179,7 @@
           <div class="orbit orbit-outer">
             <div class="orbit-path">
               <div class="orbit-item" data-label="GitHub">
-                <img src="./img/github.png" alt="GitHub" class="tech-logo" />
+                <img src="./img/piso.png" alt="GitHub" class="tech-logo" />
                 <span class="logo-label">GitHub</span>
               </div>
               <div class="orbit-item" data-label="Figma">
@@ -200,7 +198,7 @@
           </div>
         </div>
         
-        <button class="hero-button">Explore My Projects</button>
+        <a href="https://github.com/akarti5"><button class="hero-button">Explore My GitHub</button></a>
       
         
       </section>
@@ -254,30 +252,24 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="https://www.linkedin.com/in/eddy-francisco-sitrakiniaina-a8316532b/" class="social-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://github.com/akarti5" class="social-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100057061332625&locale=fr_FR" class="social-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                            </svg>
-                        </a>
+            
                     </div>
                 </div>
                 
@@ -306,45 +298,62 @@
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
-            </div>
-        </div>
         
-        <style>
-        </style>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script><!-- Step 2: Add the JavaScript for handling the form submission -->
+                 <!-- JavaScript for handling form submission -->
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize EmailJS with your public key
+    emailjs.init("F1mr5GFJA0Q5EnF_4");
+    
+    // Get the form element
+    const form = document.getElementById('emailForm');
+    
+    // Add submit event listener
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
         
-        <script>
-            document.getElementById('emailForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                
-                // In a real implementation, you would send the form data to your server
-                // or an email service like FormSpree, EmailJS, etc.
-                
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
-                
-                // Example: Show success message (in a real site, you'd show this after successful submission)
-                alert(`Thank you ${name}! Your message has been sent. We'll get back to you soon.`);
-                
-                // Reset the form
-                this.reset();
+        // Show loading state
+        const submitBtn = form.querySelector('.submit-btn');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Prepare template parameters
+        const templateParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Send the email using EmailJS
+        emailjs.send('service_fs79c3h', 'template_n1wua0g', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your message has been sent successfully!');
+                form.reset(); // Clear the form
+            })
+            .catch(function(error) {
+                console.log('FAILED...', error);
+                console.error('Error details:', error);
+                alert('Failed to send the message. Please try again later.');
+            })
+            .finally(function() {
+                // Reset button state
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
             });
-        </script>
+    });
+});
+    </script>
+ 
     </section>
     
     <!-- Footer -->
     <footer>
         <div class="footer-top">
             <div class="logo">Sitrakiniaina</div>
-            <div>
-                <p>Find Me On Social Media:</p>
-                <div class="social-links">
-                    <div class="social-icon">f</div>
-                    <div class="social-icon">t</div>
-                    <div class="social-icon">in</div>
-                </div>
-            </div>
             <div>
                 <p>I'm Always Happy To colaborate</p>
                 <p>Sitrakiniainaeddyfrancisco@gmail.com</p>
