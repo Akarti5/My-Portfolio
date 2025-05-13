@@ -307,7 +307,7 @@
 
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("F1mr5GFJA0Q5EnF_4");
+    emailjs.init("YourUserId");//Votre user Id EmailJS , le Public keys
     const form = document.getElementById('emailForm');
     
 
@@ -329,7 +329,7 @@
         };
         
         
-        emailjs.send('service_fs79c3h', 'template_n1wua0g', templateParams)
+        emailjs.send('service_idHere', 'template_idHere', templateParams)//Your service ID and template ID from EmailJS
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 alert('Your message has been sent successfully!');
