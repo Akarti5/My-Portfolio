@@ -1,7 +1,7 @@
-/* Font imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Custom Minecraft font */
+
 @font-face {
     font-family: 'MINECRAFT PE';
     src: url('../minecraft_pe/MINECRAFT PE.ttf') format('truetype');
@@ -31,7 +31,7 @@ body {
     font-style: normal;
 }
 
-/* Common section styles */
+
 .section-subtitle {
     color: #8c52ff;
     font-size: 24px;
@@ -56,7 +56,7 @@ body {
     margin-top: 10px;
 }
 
-/* Common animation */
+
 .floating {
  
     animation: float 6s ease-in-out infinite;
