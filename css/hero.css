@@ -8,7 +8,7 @@
     padding: 50px 8%;
     position: relative;
     overflow: hidden;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .hero h1 {
@@ -64,6 +64,6 @@
     position: absolute;
     width: auto;
     height: 350px;
-    bottom: 27%;
-    right: 15%;
+    bottom: 31%;
+    right: 17%;
 }
