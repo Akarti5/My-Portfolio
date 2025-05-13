@@ -1,4 +1,4 @@
- // Add active class to current section in mobile nav
+ 
  const sections = document.querySelectorAll('section');
  const navItems = document.querySelectorAll('.mobile-nav-item');
  
@@ -21,10 +21,4 @@
      });
  });
 
- // Handle CV download click
- document.getElementById('download-cv').addEventListener('click', function(e) {
-     e.preventDefault();
-     // Add your CV download logic here
-     alert('Downloading CV...');
-     // Example: window.location.href = 'path-to-your-cv.pdf';
- });
+ 
