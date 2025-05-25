@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="./css/skill.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/navBas.css">
+    <link rel="stylesheet" href="./css/project.css">
     <link rel="icon" href="./img/favico.png" type="image/png">
     <script src="./js/script.js"></script>
     <script src="./js/navBas.js"></script>
     <script src="./js/CvNonDispo.js"></script>
     <script src="./js/transition.js"></script>
+    <script src="./js/project.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Ces deux sont pour le biblio de l'alert quand on clique sur le download cv -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -202,10 +204,101 @@
           </div>
         </div>
         
-        <a href="https://github.com/akarti5"><button class="hero-button">Explore My GitHub</button></a>
+        
       
         
       </section>
+
+      <section class="projects fade-in" id="projects">
+        <h2>Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="gis">Geo Informatics</button>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card" data-category="frontend">
+                <div class="project-image">
+                    <div class="project-icon">🌐</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Onari B Website</h3>
+                    <p class="project-description">Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">View Live Demo</a>
+                        <a href="#" class="link-code">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="gis">
+                <div class="project-image">
+                    <div class="project-icon">🐦</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Google Earth Tweet Map</h3>
+                    <p class="project-description">Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">GIS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">View Live Demo</a>
+                        <a href="#" class="link-code">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="gis">
+                <div class="project-image">
+                    <div class="project-icon">📊</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ArcGIS StoryMaps</h3>
+                    <p class="project-description">Methods in Spatial Analysis. Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ArcGIS</span>
+                        <span class="tech-tag">Analysis</span>
+                        <span class="tech-tag">Story</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">View Live Demo</a>
+                        <a href="#" class="link-code">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="frontend">
+                <div class="project-image">
+                    <div class="project-icon">⚡</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Onari B Website</h3>
+                    <p class="project-description">Working closely with the CHORIS-B team, I collaborated to ensure that the website not only met but exceeded their expectations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">View Live Demo</a>
+                        <a href="#" class="link-code">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+           <a href="https://github.com/akarti5"><button class="hero-button">Explore My GitHub</button></a>
+        </div>
+    </section>
     
     
     <section id="contact" class="contact-section" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.5) 0%, rgba(10, 10, 10, 0.1) 70%);">
@@ -364,5 +457,6 @@
             <p>Copyright © 2025 • Sitrakiniaina</p>
         </div>
     </footer>
+    <script src="./js/project.js"></script>
 </body>
 </html>
