@@ -19,21 +19,26 @@
     <link rel="icon" href="./img/favico.png" type="image/png">
     <script src="./js/script.js"></script>
     <script src="./js/navBas.js"></script>
+    <script src="./js/CvNonDispo.js"></script>
+    <script src="./js/transition.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Ces deux sont pour le biblio de l'alert quand on clique sur le download cv -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     
     <style>
-        /* Enable smooth scrolling for the entire page */
+        /* Je sais pas pk ceci ne marche pas XD */
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <a href="#hero"><div class="logo">SITRAKINIAINA</div></a>
         <div class="nav-links">
+            <a href="#hero">Home</a>
             <a href="#experiences">Experiences</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
@@ -61,21 +66,21 @@
             </a>
         </div>
     </div>
-    <!-- Hero Section -->
+
     <section id="hero" class="hero" style="background: radial-gradient(circle at center, #21004b 0%, rgba(10, 10, 10, 0.2) 70%);">
-        <!-- <img src="./dragon.png" alt="fox" class="floating fox"> -->
+    
         <img src="./img/creeper.png" alt="creeper" class="creeper">
 
-        
-        <h1>HELLO WORLD !</h1>
-        <h2>My name is <span style="color:#4CCA3B;">Sitrakiniaina , a web developer</span>.</h2>
+        <h2>Hello!</h2>
+        <h1>Eddy Françisco <br>SITRAKINIAINA</h1>
+        <h2><span style="color:#4CCA3B;">Fullstack web developer</span>.</h2>
         <p>I build modern, user-friendly websites and web apps that bring ideas to life. From clean code to creative design.This is where creativity meets code and adventures come to life.
         </p>
         <a href="#contact"><button class="hero-button">Contact Me</button></a>
     </section>
     
 
-    <!-- About Section -->
+    
     <section class="about" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.6) 0%, rgba(10, 10, 10, 0.1) 70%);">
         <div class="about-content">
             <h3 class="section-subtitle">What I do</h3>
@@ -85,14 +90,14 @@
                 
                 When I'm not coding, I enjoy writing blogs, reading, exploring photography, or relaxing with a good video game.
                 I value new perspectives and love having my beliefs challenged — it helps me grow and see the world in new and meaningful ways.</p>
-            <!-- <a href="#" class="learn-more">Learn More</a> -->
+            
         </div>
         <div class=" floating about-image">
             <img src="./img/main.png" alt="Minecraft Island">
         </div>
     </section>
     
-    <!-- Features Section -->
+    
     <section id="experiences" class="features" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.4) 0%, rgba(10, 10, 10, 0.1) 70%);">
         <div class="features-top">
             <div class="features-image">
@@ -126,8 +131,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- Key Features Section -->
+
     <section id="skills" class="skills-orbit-section">
         <div class="skills-title">
           <h2 class="section-title">My <span class="feature-subtitle">skills & tools</span></h2>
@@ -136,10 +140,10 @@
         
         <div class="orbit-container">
           <div class="orbit-center">
-            <div class="profile-icon">Skill & tools</div>
+            <div class="profile-icon">Skills</div>
           </div>
           
-          <!-- Inner orbit with logos -->
+          
           <div class="orbit orbit-inner">
             <div class="orbit-path">
               <div class="orbit-item" data-label="HTML5">
@@ -157,7 +161,7 @@
             </div>
           </div>
           
-          <!-- Middle orbit with logos -->
+          
           <div class="orbit orbit-middle">
             <div class="orbit-path">
               <div class="orbit-item" data-label="PHP">
@@ -175,7 +179,7 @@
             </div>
           </div>
           
-          <!-- Outer orbit with logos -->
+          
           <div class="orbit orbit-outer">
             <div class="orbit-path">
               <div class="orbit-item" data-label="GitHub">
@@ -203,7 +207,7 @@
         
       </section>
     
-    <!-- Testimonials Section -->
+    
     <section id="contact" class="contact-section" style="background: radial-gradient(circle at center, rgba(33, 0, 75, 0.5) 0%, rgba(10, 10, 10, 0.1) 70%);">
         <div class="contact-container">
             <div class="contact-header">
@@ -299,40 +303,37 @@
                     </form>
                 </div>
         
-                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script><!-- Step 2: Add the JavaScript for handling the form submission -->
-                 <!-- JavaScript for handling form submission -->
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize EmailJS with your public key
+    document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("F1mr5GFJA0Q5EnF_4");
-    
-    // Get the form element
     const form = document.getElementById('emailForm');
     
-    // Add submit event listener
+
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
         
-        // Show loading state
         const submitBtn = form.querySelector('.submit-btn');
         const originalBtnText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Prepare template parameters
+    
         const templateParams = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
+            message: document.getElementById('message').value,
+            to_name: 'Sitrakiniaina'
         };
         
-        // Send the email using EmailJS
+        
         emailjs.send('service_fs79c3h', 'template_n1wua0g', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 alert('Your message has been sent successfully!');
-                form.reset(); // Clear the form
+                form.reset(); 
             })
             .catch(function(error) {
                 console.log('FAILED...', error);
@@ -340,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Failed to send the message. Please try again later.');
             })
             .finally(function() {
-                // Reset button state
+                // boutton de reset
                 submitBtn.textContent = originalBtnText;
                 submitBtn.disabled = false;
             });
@@ -350,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
     </section>
     
-    <!-- Footer -->
+
     <footer>
         <div class="footer-top">
             <div class="logo">Sitrakiniaina</div>
